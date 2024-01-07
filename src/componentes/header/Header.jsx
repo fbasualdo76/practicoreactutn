@@ -5,14 +5,14 @@ import logoSuperMami from "../../assets/logoSuperMami.png"
 function Header() {
   return (
     <header className='header'>
-      <img src={logoSuperMami} alt="Logo"/>
-        <nav className='nav'>
-          <ul>
-            <li><Link to='/'>INICIO</Link></li>
-            <li><Link to='/carrito'>CARRITO</Link></li>
-            <li><Link to='/contacto'>CONTACTO</Link></li>
-          </ul>
-        </nav>
+      <Link to='/practicoreactutn'><img src={logoSuperMami} alt="Logo" /></Link>
+      <nav className='nav'>
+        <ul>
+          <li><Link to='/practicoreactutn'>INICIO</Link></li>
+          <li><Link to='/practicoreactutn/carrito'>CARRITO</Link></li>
+          <li><Link to='/practicoreactutn/contacto'>CONTACTO</Link></li>
+        </ul>
+      </nav>
     </header>
   )
 }

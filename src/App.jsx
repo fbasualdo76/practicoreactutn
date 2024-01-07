@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './componentes/header/Header';
-import ListaProductos from './componentes/listaProductos/ListaProductos';
 import Section from './componentes/section/Section';
 import Footer from './componentes/footer/Footer';
 import Contacto from './componentes/contacto/Contacto.jsx'
+import ListaProductos from './componentes/listaProductos/ListaProductos.jsx';
 import productos from './datos/productos.js';
 import VistaProducto from './vistas/VistaProducto.jsx';
 import Slider from './componentes/slider/Slider.jsx';
@@ -16,9 +16,9 @@ function App() {
         <Slider />
         <main>
           <Routes>
-            <Route path="/" element={<ListaProductos />} />
-            <Route path="/carrito" element={<div>CARRITO</div>} />
-            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/practicoreactutn" element={<ListaProductos />} />
+            <Route path="/practicoreactutn/carrito" element={<div>CARRITO</div>} />
+            <Route path="/practicoreactutn/contacto" element={<Contacto />} />
             {productos.map((producto) => (
               <Route key={producto.nombre} path={producto.nombre} element={<VistaProducto producto={producto} />} />
             ))}
